@@ -1,0 +1,242 @@
+.agileits_header {
+    background: #333333;
+    padding: 12px 0;
+}
+.agileits_header {
+    padding: 12px 0 8px;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  .container > .navbar-header,
+  .container > .navbar-collapse {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  @media (min-width: 768px) {
+    .container > .navbar-header,
+    .container > .navbar-collapse {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+  @media (min-width: 768px) {
+    .navbar > .container .navbar-brand{
+      margin-left: -15px;
+    }
+  }
+  .container .jumbotron {
+  border-radius: 6px;
+}
+.jumbotron .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    padding: 48px 0;
+  }
+  .container .jumbotron{
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}
+
+.agile-login {
+    float: left;
+    width: 40%;
+    text-align: center;
+    padding: 9px 0;
+}
+.agile-login ul li {
+    display: inline-block;
+    padding: 0em 1em;
+}
+.agile-login ul li a {
+    font-size: 1em;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+}
+.w3l_offers {
+    float: left;
+    padding: 9px 0;
+	width: 47%;
+}
+.w3l_offers p {
+    font-size: 15px;
+    color: #fff;
+}
+.w3l_offers p a {
+    color: #fe9126;
+    text-decoration: none;
+}
+.product_list_header span {
+    font-size: 1em;
+    color: #fff;
+	top: 1em;
+}
+/* cart */
+.product_list_header {
+    float: right;
+}
+.product_list_header input.button {
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    text-transform: capitalize;
+    padding: .5em 2.5em .5em 1em;
+    border: 1px solid #fe9126;
+    margin: .35em 0 0;
+    /* background: url(/assets/css/images/cart.png) no-repeat 116px 9px; */
+}
+
+
+@media (max-width: 991px){
+    .w3l_offers p {
+        font-size: 14px;
+    }
+    .w3l_offers {
+        width: 52%;
+    }
+    .agile-login {
+        padding: 6px 0;
+    }
+}
+@media (max-width: 736px){
+    .w3l_offers p {
+        font-size: 13px;
+    }
+}
+@media (max-width: 667px){
+    .w3l_offers {
+        width: 56%;
+    }
+    .agile-login {
+        width: 37%;
+    }
+    .agile-login ul li {
+        padding: 0em 0.4em;
+    }
+}
+@media (max-width: 640px){
+    .w3l_offers {
+        width: 100%;
+        text-align: center;
+    }
+    .agile-login {
+        width: 38%;
+    }
+}
+@media (max-width: 384px){
+    .w3l_offers p {
+        font-size: 12px;
+    }
+    .agile-login {
+        width: 67%;
+    }
+}
+@media (max-width: 320px){
+    .w3l_offers p {
+        font-size: 10px;
+    }
+    .w3l_offers {
+        padding: 9px 0 5px;
+    }
+    .agile-login {
+        width: 79%;
+    }
+}
+
+@media (max-width: 600px){
+    .agile-login {
+        width: 40%;
+    }
+}
+@media (max-width: 568px){
+    .agile-login {
+        width: 43%;
+    }
+}
+@media (max-width: 480px){
+    .agile-login {
+        width: 50%;
+    }
+}
+@media (max-width: 414px){
+    .agile-login {
+        width: 61%;
+    }
+}
+
+
+
+  .clearfix:before,
+  .clearfix:after,
+  .dl-horizontal dd:before,
+  .dl-horizontal dd:after,
+  .container:before,
+  .container:after,
+  .container-fluid:before,
+  .container-fluid:after,
+  .row:before,
+  .row:after,
+  .form-horizontal .form-group:before,
+  .form-horizontal .form-group:after,
+  .btn-toolbar:before,
+  .btn-toolbar:after,
+  .btn-group-vertical > .btn-group:before,
+  .btn-group-vertical > .btn-group:after,
+  .nav:before,
+  .nav:after,
+  .navbar:before,
+  .navbar:after,
+  .navbar-header:before,
+  .navbar-header:after,
+  .navbar-collapse:before,
+  .navbar-collapse:after,
+  .pager:before,
+  .pager:after,
+  .panel-body:before,
+  .panel-body:after,
+  .modal-footer:before,
+  .modal-footer:after {
+    display: table;
+    content: " ";
+  }
+  .clearfix:after,
+  .dl-horizontal dd:after,
+  .container:after,
+  .container-fluid:after,
+  .row:after,
+  .form-horizontal .form-group:after,
+  .btn-toolbar:after,
+  .btn-group-vertical > .btn-group:after,
+  .nav:after,
+  .navbar:after,
+  .navbar-header:after,
+  .navbar-collapse:after,
+  .pager:after,
+  .panel-body:after,
+  .modal-footer:after {
+    clear: both;
+  }
+
+  
