@@ -1,13 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react';
+import Header from "./Header";
+import Logo from "./logo";
+import NavBar from "./NavBar";
 
-export class Gourment extends Component {
-    render() {
-        return (
-            <div>
-                This is gournent
-            </div>
-        )
-    }
+function Gourment() {
+    return (
+        <>
+      <Header />
+      <Logo />
+      <NavBar />
+    </>
+    )
 }
 
 export default Gourment
+

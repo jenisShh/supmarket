@@ -1,14 +1,17 @@
-import React, { Component } from 'react'
+import React from "react";
+import Header from "./Header";
+import Logo from "./logo";
+import NavBar from "./NavBar";
 
-export class Contact extends Component {
-    render() {
-        return (
-            <div>
-                This is contact
-            </div>
-        )
-    }
+
+function Contact() {
+  return (
+    <>
+      <Header />
+      <Logo />
+      <NavBar />
+    </>
+  );
 }
 
-export default Contact
-
+export default Contact;
