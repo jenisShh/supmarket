@@ -1,10 +1,16 @@
 import React, { Component } from "react";
-import './Header.css';
+
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+ import '../assets/css/bootstrap.css'
+import '../assets/css/style.css';
+import {FaCartArrowDown} from "../../node_modules/react-icons/fa";
+
+import register from "./Register";
 
 export class Header extends Component {
   render() {
     return (
-      <div>
+      <>
         <div className="agileits_header">
           <div className="container">
             <div className="w3l_offers">
@@ -16,7 +22,7 @@ export class Header extends Component {
             <div className="agile-login">
               <ul>
                 <li>
-                  <a href="registered.html"> Create Account </a>
+                  <a href={register}> Create Account </a>
                 </li>
                 <li>
                   <a href="login.html">Login</a>
@@ -35,15 +41,18 @@ export class Header extends Component {
                   type="submit"
                   name="submit"
                   value=""
-                >
-                  <i className="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                  >
+                  <i aria-hidden > <FaCartArrowDown/></i>
                 </button>
+
               </form>
             </div>
             <div className="clearfix"> </div>
           </div>
         </div>
-      </div>
+        
+      </>
+      
     );
   }
 }

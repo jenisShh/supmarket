@@ -1,5 +1,5 @@
 import React from 'react'
-import card from "../asset/images/card.png"
+import card from "../assets/images/card.png"
 
 function Footer() {
     return (
@@ -62,10 +62,10 @@ function Footer() {
 			<div className="container">
 				<div className="w3layouts-foot">
 					<ul>
-						<li><a href="/" className="w3_agile_facebook"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li><a href="/" className="agile_twitter"><i className="fa fa-twitter" aria-hidden="true"></i></a></li>
-						<li><a href="/" className="w3_agile_dribble"><i className="fa fa-dribbble" aria-hidden="true"></i></a></li>
-						<li><a href="/" className="w3_agile_vimeo"><i className="fa fa-vimeo" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.facebook.com/" className="w3_agile_facebook"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.twitter.com/" className="agile_twitter"><i className="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.facebook.com/" className="w3_agile_dribble"><i className="fa fa-dribbble" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.facebook.com/" className="w3_agile_vimeo"><i className="fa fa-vimeo" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
 				<div className="payment-w3ls">	

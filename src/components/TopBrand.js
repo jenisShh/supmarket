@@ -1,16 +1,17 @@
 import React from 'react'
-import img1 from "../asset/images/1.png"
-import img2 from "../asset/images/2.png"
-import img3 from "../asset/images/3.png"
-import img4 from "../asset/images/4.png"
-import img5 from "../asset/images/5.png"
-import img6 from "../asset/images/6.png"
-import img7 from "../asset/images/7.png"
-import img8 from "../asset/images/8.png"
-import img9 from "../asset/images/9.png"
-import img10 from "../asset/images/10.png"
-import img12 from "../asset/images/12.png"
-import img13 from "../asset/images/13.png"
+import img1 from "../assets/images/1.png"
+import img2 from "../assets/images/2.png"
+import img3 from "../assets/images/3.png"
+import img4 from "../assets/images/4.png"
+import img5 from "../assets/images/5.png"
+import img6 from "../assets/images/6.png"
+import img7 from "../assets/images/7.png"
+import img8 from "../assets/images/8.png"
+import img9 from "../assets/images/9.png"
+import img10 from "../assets/images/10.png"
+import img12 from "../assets/images/12.png"
+import img13 from "../assets/images/13.png"
+import '../assets/css/style.css'
 
 function TopBrand() {
     return (
@@ -326,7 +327,7 @@ function TopBrand() {
 															<h4>$35.99 <span>$55.00</span></h4>
 														</div>
 														<div className="snipcart-details top_brand_home_details">
-															<form action="#" method="post">
+															<form action="/" method="post">
 																<fieldset>
 																	<input type="hidden" name="cmd" value="_cart" />
 																	<input type="hidden" name="add" value="1" />

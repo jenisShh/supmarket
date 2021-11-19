@@ -1,38 +1,53 @@
-import React, { Component } from "react";
-import './slider.css'
-// import pic1 from "../asset/images/11.jpg";
-// import pic2 from "../asset/images/22.jpg";
-// import pic3 from "../asset/images/44.jpg";
+import React from "react";
+import {Carousel} from 'react-bootstrap';
+// import { Fade } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import pic1 from '../assets/images/11.jpg'
+import pic2 from '../assets/images/22.jpg'
+import pic3 from '../assets/images/44.jpg'
 
-export class Slider extends Component {
-  render() {
-    return (
-      <div className="slide">
-        <ul id="demo1">
-          <li>
-            {/* <img src={pic1} alt="" /> */}
-            {/* <!--Slider Description example--> */}
-            <div class="slide1">
-              <h3>Buy Rice Products Are Now On Line With Us</h3>
-            </div>
-          </li>
-          <li>
-            {/* <img src={pic2} alt="" /> */}
-            <div class="slide2">
-              {/* <h3>Whole Spices Products Are Now On Line With Us</h3> */}
-            </div>
-          </li>
+function Slider() 
+{
+  return(
+    <>
 
-          <li>
-            {/* <img src={pic3} alt="" /> */}
-            <div class="slide3">
-              {/* <h3>Whole Spices Products Are Now On Line With Us</h3> */}
-            </div>
-          </li>
-        </ul>
-      </div>
-    );
-  }
+    <Carousel fade>
+  <Carousel.Item interval={1000}>
+    <img
+      className="d-block w-100"
+      src={pic1}
+      alt="First slide"
+    />
+    <Carousel.Caption textalign="center">
+      <h1>BUY RICE PROUCTS ARE <br/> NOW ON LINE WITH US</h1>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item interval={500}>
+    <img
+      className="d-block w-100"
+      src={pic2}
+      alt="Second slide"
+    />
+
+    <Carousel.Caption>
+    <h1>WHOLE SPICES PRODUCTS  <br/> ARE  NOW ON LINE WITH US</h1>
+  
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item interval={400}>
+    <img
+      className="d-block w-100"
+      src={pic3}
+      alt="Third slide"
+    />
+
+    <Carousel.Caption>
+    <h1>WHOLE SPICES PRODUCTS  <br/> ARE  NOW ON LINE WITH US</h1>
+
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
+    </>
+  );
 }
-
 export default Slider;

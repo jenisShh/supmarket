@@ -1,4 +1,8 @@
 import React, { Component } from 'react'
+import '../assets/css/style.css';
+import {BsSearch} from '../../node_modules/react-icons/bs';
+import {FaPhoneAlt} from '../../node_modules/react-icons/fa';
+
 
 export class Logo extends Component {
     render() {
@@ -8,7 +12,7 @@ export class Logo extends Component {
 		<div className="container">
 		<div className="w3ls_logo_products_left1">
 				<ul className="phone_email">
-					<li><i className="fa fa-phone" aria-hidden="true"></i>Order online or call us : (+0123) 234 567</li>
+					<li><i aria-hidden="true"> <FaPhoneAlt/> </i>Order online or call us : (+0123) 234 567</li>
 					
 				</ul>
 			</div>
@@ -19,7 +23,7 @@ export class Logo extends Component {
 			<form action="#" method="post">
 				<input type="search" name="Search" placeholder="Search for a Product..." required="" />
 				<button type="submit" className="btn btn-default search" aria-label="Left Align">
-					<i className="fa fa-search" aria-hidden="true"> </i>
+					<i aria-hidden="true"> <BsSearch/> </i>
 				</button>
 				<div className="clearfix"></div>
 			</form>
@@ -33,4 +37,4 @@ export class Logo extends Component {
     }
 }
 
-export default Logo
+export default Logo;

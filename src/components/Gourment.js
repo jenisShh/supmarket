@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './Footer';
 import Header from "./Header";
 import Logo from "./logo";
 import NavBar from "./NavBar";
@@ -9,6 +10,7 @@ function Gourment() {
       <Header />
       <Logo />
       <NavBar />
+      <Footer />
     </>
     )
 }

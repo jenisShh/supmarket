@@ -1,135 +1,92 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-// import 'bootstrap/dist/css/bootstrap.min.css'
+import { Navbar } from 'react-bootstrap'
+import { Nav } from 'react-bootstrap'
+import { NavDropdown } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
+import './NavBar.css'
+// import dals from './menus/dals'
+
 
 export class NavBar extends Component {
     render() {
         return (
-            <div>
-                <div className="navigation-agileits">
-		<div className="container">
-			<nav className="navbar navbar-default">
-							{/* <!-- Brand and toggle get grouped for better mobile display --> */}
-							<div className="navbar-header nav_2">
-								<button type="button" className="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="/bs-megadropdown-tabs">
-									<span className="sr-only">Toggle navigation</span>
-									<span className="icon-bar"></span>
-									<span className="icon-bar"></span>
-									<span className="icon-bar"></span>
-								</button>
-							</div> 
-							<div className="collapse navbar-collapse" id="bs-megadropdown-tabs">
-								<ul className="nav navbar-nav">
-									<li className="active"><Link to="/" className="act">Home</Link></li>	
-									{/* <!-- Mega Menu --> */}
-									<li className="dropdown">
-										<a href="/" className="dropdown-toggle" data-toggle="dropdown">Groceries<b className="caret"></b></a>
-										<ul className="dropdown-menu multi-column columns-3">
-											<div className="row">
-												<div className="multi-gd-img">
-													<ul className="multi-column-dropdown">
-														<h6>All Groceries</h6>
-														<li><a href="groceries.html">Dals & Pulses</a></li>
-														<li><a href="groceries.html">Almonds</a></li>
-														<li><a href="groceries.html">Cashews</a></li>
-														<li><a href="groceries.html">Dry Fruit</a></li>
-														<li><a href="groceries.html"> Mukhwas </a></li>
-														<li><a href="groceries.html">Rice & Rice Products</a></li>
-													</ul>
-												</div>	
-												
-											</div>
-										</ul>
-									</li>
-									<li className="dropdown">
-										<a href="/" className="dropdown-toggle" data-toggle="dropdown">Household<b className="caret"></b></a>
-										<ul className="dropdown-menu multi-column columns-3">
-											<div className="row">
-												<div className="multi-gd-img">
-													<ul className="multi-column-dropdown">
-														<h6>All Household</h6>
-														<li><a href="household.html">Cookware</a></li>
-														<li><a href="household.html">Dust Pans</a></li>
-														<li><a href="household.html">Scrubbers</a></li>
-														<li><a href="household.html">Dust Cloth</a></li>
-														<li><a href="household.html"> Mops </a></li>
-														<li><a href="household.html">Kitchenware</a></li>
-													</ul>
-												</div>	
-												
-											</div>
-										</ul>
-									</li>
-									<li className="dropdown">
-										<a href="/" className="dropdown-toggle" data-toggle="dropdown">Personal Care<b className="caret"></b></a>
-										<ul className="dropdown-menu multi-column columns-3">
-											<div className="row">
-												<div className="multi-gd-img">
-													<ul className="multi-column-dropdown">
-														<h6>Baby Care</h6>
-														<li><a href="personalcare.html">Baby Soap</a></li>
-														<li><a href="personalcare.html">Baby Care Accessories</a></li>
-														<li><a href="personalcare.html">Baby Oil & Shampoos</a></li>
-														<li><a href="personalcare.html">Baby Creams & Lotion</a></li>
-														<li><a href="personalcare.html"> Baby Powder</a></li>
-														<li><a href="personalcare.html">Diapers & Wipes</a></li>
-													</ul>
-												</div>
-												
-											</div>
-										</ul>
-									</li>
-									<li className="dropdown">
-										<a href="/" className="dropdown-toggle" data-toggle="dropdown">Packaged Foods<b className="caret"></b></a>
-										<ul className="dropdown-menu multi-column columns-3">
-											<div className="row">
-												<div className="multi-gd-img">
-													<ul className="multi-column-dropdown">
-														<h6>All Accessories</h6>
-														<li><a href="packagedfoods.html">Baby Food</a></li>
-														<li><a href="packagedfoods.html">Dessert Items</a></li>
-														<li><a href="packagedfoods.html">Biscuits</a></li>
-														<li><a href="packagedfoods.html">Breakfast Cereals</a></li>
-														<li><a href="packagedfoods.html"> Canned Food </a></li>
-														<li><a href="packagedfoods.html">Chocolates & Sweets</a></li>
-													</ul>
-												</div>
-												
-											
-											</div>
-										</ul>
-									</li>
-									<li className="dropdown">
-										<a href="/" className="dropdown-toggle" data-toggle="dropdown">Beverages<b className="caret"></b></a>
-										<ul className="dropdown-menu multi-column columns-3">
-											<div className="row">
-												<div className="multi-gd-img">
-													<ul className="multi-column-dropdown">
-														<h6>Tea & Coeffe</h6>
-														<li><a href="beverages.html">Green Tea</a></li>
-														<li><a href="beverages.html">Ground Coffee</a></li>
-														<li><a href="beverages.html">Herbal Tea</a></li>
-														<li><a href="beverages.html">Instant Coffee</a></li>
-														<li><a href="beverages.html"> Tea </a></li>
-														<li><a href="beverages.html">Tea Bags</a></li>
-													</ul>
-												</div>
-							
-											</div>
-										</ul>
-									</li>
-									<li><Link to="/Gourment"> Gourmet</Link></li>
-									<li><a href="offers.html">Offers</a></li>
-									<li><Link to= "/Contact"> Contact</Link></li>
-								</ul>
-							</div>
-							</nav>
-			</div>
-		</div>
-                
-            </div>
+            <>
+			<Navbar collapseOnSelect expand="lg" >
+				<Container>
+				{/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
+				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+				<Navbar.Collapse id="responsive-navbar-nav" class="">
+					<Nav className="me-auto">
+					<Nav.Link href="/" className="nav-links">Home</Nav.Link>	
+					<NavDropdown title="Groceries" id="collasible-nav-dropdown">
+						<NavDropdown.Item>All Groceries</NavDropdown.Item>
+						<NavDropdown.Divider />
+						<NavDropdown.Item href="/groceries">Dals & Pulses</NavDropdown.Item>
+						<NavDropdown.Item href="/groceries">Almonds</NavDropdown.Item>
+						<NavDropdown.Item href="/groceries">Cashews</NavDropdown.Item>
+						<NavDropdown.Item href="/groceries">Dry Fruit</NavDropdown.Item>
+						<NavDropdown.Item href="/groceries">Mukhwas</NavDropdown.Item>
+						<NavDropdown.Item href="/groceries">Rice & Rice Products</NavDropdown.Item>
+					</NavDropdown>
+					<NavDropdown title="Household" id="collasible-nav-dropdown">
+						<NavDropdown.Item>All Household </NavDropdown.Item>
+						<NavDropdown.Divider />
+						<NavDropdown.Item href="/household">Cookware</NavDropdown.Item>
+						<NavDropdown.Item href="/household">Dust Pans</NavDropdown.Item>
+						<NavDropdown.Item href="/household">Scrubbers</NavDropdown.Item>
+						<NavDropdown.Item href="/household">Dust Cloth</NavDropdown.Item>
+						<NavDropdown.Item href="/household">Mops</NavDropdown.Item>
+						<NavDropdown.Item href="/household">Kitchenware</NavDropdown.Item>
+					</NavDropdown>
+					<NavDropdown title="Personal Care" id="collasible-nav-dropdown">
+						<NavDropdown.Item>Baby Care</NavDropdown.Item>
+						<NavDropdown.Divider />
+						<NavDropdown.Item href="/personalCare">Baby Soap</NavDropdown.Item>
+						<NavDropdown.Item href="/personalCare">Baby Care Accessories</NavDropdown.Item>
+						<NavDropdown.Item href="/personalCare">Baby Oil & Shampoos</NavDropdown.Item>
+						<NavDropdown.Item href="/personalCare">Baby Creams & Lotion</NavDropdown.Item>
+						<NavDropdown.Item href="/personalCare">Baby Powder</NavDropdown.Item>
+						<NavDropdown.Item href="/personalCare">Diapers & Wipes</NavDropdown.Item>
+					</NavDropdown>
+					<NavDropdown title="Packaged Foods" id="collasible-nav-dropdown">
+						<NavDropdown.Item>All Accessories</NavDropdown.Item>
+						<NavDropdown.Divider />
+						<NavDropdown.Item href="/packagedFood">Baby Foods</NavDropdown.Item>
+						<NavDropdown.Item href="/packagedFood">Dessert Items</NavDropdown.Item>
+						<NavDropdown.Item href="/packagedFood">Biscuits</NavDropdown.Item>
+						<NavDropdown.Item href="/packagedFood">Breakfast Cereals</NavDropdown.Item>
+						<NavDropdown.Item href="/packagedFood">Canned Food</NavDropdown.Item>
+						<NavDropdown.Item href="/packagedFood">Chocolates & Sweets</NavDropdown.Item>
+					</NavDropdown>
+					<NavDropdown title="Beverages" id="collasible-nav-dropdown">
+						<NavDropdown.Item>Tea & Coeffe</NavDropdown.Item>
+						<NavDropdown.Divider />
+						<NavDropdown.Item href="/beverages">Green Tea</NavDropdown.Item>
+						<NavDropdown.Item href="/beverages">Ground Coffee</NavDropdown.Item>
+						<NavDropdown.Item href="/beverages">Herbal Tea</NavDropdown.Item>
+						<NavDropdown.Item href="/beverages">Instant Coffee</NavDropdown.Item>
+						<NavDropdown.Item href="/beverages">Tea</NavDropdown.Item>
+						<NavDropdown.Item href="/beverages">Tea Bags</NavDropdown.Item>
+					</NavDropdown>
+					<Nav.Link  href="/gourment" >Gourment</Nav.Link>
+					<Nav.Link href="offer">Offers</Nav.Link>
+					<Nav.Link href="contact">Contact</Nav.Link>
+					</Nav>
+					{/* <Nav>
+					<Nav.Link href="#deets">More deets</Nav.Link>
+					<Nav.Link eventKey={2} href="#memes">
+						Dank memes
+					</Nav.Link>
+					</Nav> */}
+				</Navbar.Collapse>
+				</Container>
+</Navbar>
+			</>
         )
     }
 }
+export default NavBar;
 
-export default NavBar
+
+
+
