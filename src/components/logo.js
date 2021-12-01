@@ -17,7 +17,7 @@ export class Logo extends Component {
 				</ul>
 			</div>
 			<div className="w3ls_logo_products_left">
-				<h1><a href="index.html">super Market</a></h1>
+				<h1><a href="/">super Market</a></h1>
 			</div>
 		<div className="w3l_search">
 			<form action="#" method="post">

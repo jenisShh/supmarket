@@ -5,7 +5,6 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../assets/css/style.css';
 import {FaCartArrowDown} from "../../node_modules/react-icons/fa";
 
-import register from "./Register";
 
 export class Header extends Component {
   render() {
@@ -16,24 +15,24 @@ export class Header extends Component {
             <div className="w3l_offers">
               <p>
                 SALE UP TO 70% OFF. USE CODE "SALE70%" .{" "}
-                <a href="products.html">SHOP NOW</a>
+                <a href="/products">SHOP NOW</a>
               </p>
             </div>
             <div className="agile-login">
               <ul>
                 <li>
-                  <a href={register}> Create Account </a>
+                  <a href="/register"> Create Account </a>
                 </li>
                 <li>
-                  <a href="login.html">Login</a>
+                  <a href="/login">Login</a>
                 </li>
                 <li>
-                  <a href="contact.html">Help</a>
+                  <a href="/contact">Help</a>
                 </li>
               </ul>
             </div>
             <div className="product_list_header">
-              <form action="#" method="post" className="last">
+              <form action="/" method="post" className="last">
                 <input type="hidden" name="cmd" value="_cart" />
                 <input type="hidden" name="display" value="1" />
                 <button

@@ -18,57 +18,18 @@ export class NavBar extends Component {
 				<Navbar.Collapse id="responsive-navbar-nav" class="">
 					<Nav className="me-auto">
 					<Nav.Link href="/" className="nav-links">Home</Nav.Link>	
-					<NavDropdown title="Groceries" id="collasible-nav-dropdown">
-						<NavDropdown.Item>All Groceries</NavDropdown.Item>
+					<NavDropdown title="PIZZA" id="collasible-nav-dropdown">
+						<NavDropdown.Item>PIZZA</NavDropdown.Item>
 						<NavDropdown.Divider />
-						<NavDropdown.Item href="/groceries">Dals & Pulses</NavDropdown.Item>
-						<NavDropdown.Item href="/groceries">Almonds</NavDropdown.Item>
-						<NavDropdown.Item href="/groceries">Cashews</NavDropdown.Item>
-						<NavDropdown.Item href="/groceries">Dry Fruit</NavDropdown.Item>
-						<NavDropdown.Item href="/groceries">Mukhwas</NavDropdown.Item>
-						<NavDropdown.Item href="/groceries">Rice & Rice Products</NavDropdown.Item>
-					</NavDropdown>
-					<NavDropdown title="Household" id="collasible-nav-dropdown">
-						<NavDropdown.Item>All Household </NavDropdown.Item>
-						<NavDropdown.Divider />
-						<NavDropdown.Item href="/household">Cookware</NavDropdown.Item>
-						<NavDropdown.Item href="/household">Dust Pans</NavDropdown.Item>
-						<NavDropdown.Item href="/household">Scrubbers</NavDropdown.Item>
-						<NavDropdown.Item href="/household">Dust Cloth</NavDropdown.Item>
-						<NavDropdown.Item href="/household">Mops</NavDropdown.Item>
-						<NavDropdown.Item href="/household">Kitchenware</NavDropdown.Item>
-					</NavDropdown>
-					<NavDropdown title="Personal Care" id="collasible-nav-dropdown">
-						<NavDropdown.Item>Baby Care</NavDropdown.Item>
-						<NavDropdown.Divider />
-						<NavDropdown.Item href="/personalCare">Baby Soap</NavDropdown.Item>
-						<NavDropdown.Item href="/personalCare">Baby Care Accessories</NavDropdown.Item>
-						<NavDropdown.Item href="/personalCare">Baby Oil & Shampoos</NavDropdown.Item>
-						<NavDropdown.Item href="/personalCare">Baby Creams & Lotion</NavDropdown.Item>
-						<NavDropdown.Item href="/personalCare">Baby Powder</NavDropdown.Item>
-						<NavDropdown.Item href="/personalCare">Diapers & Wipes</NavDropdown.Item>
-					</NavDropdown>
-					<NavDropdown title="Packaged Foods" id="collasible-nav-dropdown">
-						<NavDropdown.Item>All Accessories</NavDropdown.Item>
-						<NavDropdown.Divider />
-						<NavDropdown.Item href="/packagedFood">Baby Foods</NavDropdown.Item>
-						<NavDropdown.Item href="/packagedFood">Dessert Items</NavDropdown.Item>
-						<NavDropdown.Item href="/packagedFood">Biscuits</NavDropdown.Item>
-						<NavDropdown.Item href="/packagedFood">Breakfast Cereals</NavDropdown.Item>
-						<NavDropdown.Item href="/packagedFood">Canned Food</NavDropdown.Item>
-						<NavDropdown.Item href="/packagedFood">Chocolates & Sweets</NavDropdown.Item>
-					</NavDropdown>
-					<NavDropdown title="Beverages" id="collasible-nav-dropdown">
-						<NavDropdown.Item>Tea & Coeffe</NavDropdown.Item>
-						<NavDropdown.Divider />
-						<NavDropdown.Item href="/beverages">Green Tea</NavDropdown.Item>
-						<NavDropdown.Item href="/beverages">Ground Coffee</NavDropdown.Item>
-						<NavDropdown.Item href="/beverages">Herbal Tea</NavDropdown.Item>
-						<NavDropdown.Item href="/beverages">Instant Coffee</NavDropdown.Item>
-						<NavDropdown.Item href="/beverages">Tea</NavDropdown.Item>
-						<NavDropdown.Item href="/beverages">Tea Bags</NavDropdown.Item>
-					</NavDropdown>
-					<Nav.Link  href="/gourment" >Gourment</Nav.Link>
+						<NavDropdown.Item href="/groceries">Pizza Sub</NavDropdown.Item>
+						<NavDropdown.Item href="/groceries">pizza Sub1</NavDropdown.Item>
+					</NavDropdown>	
+					<Nav.Link href="/" > MOMO </Nav.Link>
+					<Nav.Link href="/" > NOODLES </Nav.Link>
+					<Nav.Link href="/" > CHILLI </Nav.Link>
+					<Nav.Link href="/" > SANDWICH </Nav.Link>
+					<Nav.Link href="/" > HEALTHY CHOICE  </Nav.Link>
+					<Nav.Link href="/" > RICE </Nav.Link>
 					<Nav.Link href="offer">Offers</Nav.Link>
 					<Nav.Link href="contact">Contact</Nav.Link>
 					</Nav>

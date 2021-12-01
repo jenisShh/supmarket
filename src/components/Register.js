@@ -1,17 +1,19 @@
 import React from 'react'
 import Footer from './Footer'
 import Header from './Header'
+import Logo from './logo'
 import NavBar from './NavBar'
 
-function register() {
+function Register() {
     return (
         <>
         <Header/>
+        <Logo/>
         <NavBar/>
         <div className="breadcrumbs">
             <div className="container">
                 <ol className="breadcrumb breadcrumb1 animated wow slideInLeft" data-wow-delay=".5s">
-                    <li><a href="index.html"><span className="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
+                    <li><a href="/"><span className="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
                     <li className="active">Register Page</li>
                 </ol>
             </div>
@@ -21,7 +23,7 @@ function register() {
                 <h2>Register Here</h2>
                 <div className="login-form-grids">
                     <h5>profile information</h5>
-                    <form action="#" method="post">
+                    <form action="/" method="post">
                         <input type="text" placeholder="First Name..." required=" " />
                         <input type="text" placeholder="Last Name..." required=" " />
                     </form>
@@ -31,7 +33,7 @@ function register() {
                         </div>
                     </div>
                     <h6>Login information</h6>
-                        <form action="#" method="post">
+                        <form action="/" method="post">
                         <input type="email" placeholder="Email Address" required=" " />
                         <input type="password" placeholder="Password" required=" " />
                         <input type="password" placeholder="Password Confirmation" required=" " />
@@ -44,7 +46,7 @@ function register() {
                     </form>
                 </div>
                 <div className="register-home">
-                    <a href="index.html">Home</a>
+                    <a href="/">Home</a>
                 </div>
             </div>
         </div>
@@ -53,4 +55,4 @@ function register() {
     )
 }
 
-export default register
+export default Register;
