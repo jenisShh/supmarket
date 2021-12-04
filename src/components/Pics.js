@@ -5,14 +5,14 @@ import "../assets/css/bootstrap.css";
 import "../assets/css/style.css"
 
 
-function Immagess()  {
+function Pics()  {
   useEffect(() => {
-    getImmagess();
+    getPics();
   }, []);
 
-  const [immagess, setImmagess] = useState([]);
+  const [pics, setPics] = useState([]);
   const [loading, setLoading] = useState(false);
-  const getImmagess = async () => {
+  const getPics = async () => {
     try {
       const response = await axios.get(
         "https://uat.ordering-boafresh.ekbana.net/api/v4/newhome",
@@ -24,26 +24,52 @@ function Immagess()  {
           },
         }
       );
-      setImmagess(response.data.data[0].details);
+      setPics(response.data.data[5].details);
       setLoading(true);
-      console.log(immagess);
+      console.log(pics);
     } catch (err) {
       alert(err.message);
     }
   };
 
+  // const Immage = ({ pic }) => {
     return (
       <div>
-        <Carousel fade interval={1000} >
-        {loading &&
-        immagess.map((immage) => (
+        <Carousel >
+        {loading && 
+        pics.map((pic) => (
           <Carousel.Item >
-          <img className="d-block w-100" src={immage.images}  />
+          <img className="d-block w-100" src={pic.images}  />
          
           </Carousel.Item>
         ))}
         </Carousel> 
       </div>
     );
+
+  // return (
+  //   <>
+  //     {/* <Carousel> */}
+
+  //     {loading &&
+  //       picss.map((pic) => {
+  //         <Carousel.Item interval={1000} key={pic.id}>
+  //           <Immage pic={pic} />
+  //         </Carousel.Item>;
+  //       })}
+  //     {/* </Carousel> */}
+  //   </>
+  // );
 };
-export default Immagess;
+export default Pics;
+
+
+{/* <Carousel>
+<Carousel.Item>
+    <img
+    className="d-block w-100"
+    src={fslide}
+    alt="Third slide"
+    />
+</Carousel.Item>
+</Carousel> */}

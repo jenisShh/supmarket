@@ -19,17 +19,17 @@ export class NavBar extends Component {
 					<Nav className="me-auto">
 					<Nav.Link href="/" className="nav-links">Home</Nav.Link>	
 					<NavDropdown title="PIZZA" id="collasible-nav-dropdown">
-						<NavDropdown.Item>PIZZA</NavDropdown.Item>
+						<NavDropdown.Item href="/Pizzas">PIZZA</NavDropdown.Item>
 						<NavDropdown.Divider />
-						<NavDropdown.Item href="/groceries">Pizza Sub</NavDropdown.Item>
-						<NavDropdown.Item href="/groceries">pizza Sub1</NavDropdown.Item>
+						<NavDropdown.Item href="/Pizzas1">Pizza Sub1</NavDropdown.Item>
+						<NavDropdown.Item href="/Pizzas2">pizza Sub2</NavDropdown.Item>
 					</NavDropdown>	
-					<Nav.Link href="/" > MOMO </Nav.Link>
-					<Nav.Link href="/" > NOODLES </Nav.Link>
-					<Nav.Link href="/" > CHILLI </Nav.Link>
-					<Nav.Link href="/" > SANDWICH </Nav.Link>
-					<Nav.Link href="/" > HEALTHY CHOICE  </Nav.Link>
-					<Nav.Link href="/" > RICE </Nav.Link>
+					<Nav.Link href="/Momos" > MOMO </Nav.Link>
+					<Nav.Link href="/Noodles" > NOODLES </Nav.Link>
+					<Nav.Link href="/Chillies" > CHILLI </Nav.Link>
+					<Nav.Link href="/Sandwiches" > SANDWICH </Nav.Link>
+					<Nav.Link href="/Healthychoices" > HEALTHY CHOICE  </Nav.Link>
+					<Nav.Link href="/Rices" > RICE </Nav.Link>
 					<Nav.Link href="offer">Offers</Nav.Link>
 					<Nav.Link href="contact">Contact</Nav.Link>
 					</Nav>

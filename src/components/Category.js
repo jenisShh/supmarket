@@ -14,7 +14,7 @@ const Category = ({category}) => {
                 <Card.Subtitle className= "mb-2 text-muted">  
                     {`${category.productCount}`} products
                 </Card.Subtitle>
-                <a href="/products" class="card-link">Shop Now</a>
+                <a href="/Allitems" class="card-link">Shop Now</a>
             </Card.Body> 
 
         </Card>

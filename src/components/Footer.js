@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import card from "../assets/images/card.png"
 
 function Footer() {
@@ -21,28 +22,31 @@ function Footer() {
 					<ul className="info"> 
 						<li><i className="fa fa-arrow-right" aria-hidden="true"></i><a href="/About">About Us</a></li>
 						<li><i className="fa fa-arrow-right" aria-hidden="true"></i><a href="Contact">Contact Us</a></li>
-						<li><i className="fa fa-arrow-right" aria-hidden="true"></i><a href="short-codes.html">Short Codes</a></li>
 						<li><i className="fa fa-arrow-right" aria-hidden="true"></i><a href="/faq">FAQ's</a></li>
-						<li><i className="fa fa-arrow-right" aria-hidden="true"></i><a href="/products">Special Products</a></li>
+						<li><i className="fa fa-arrow-right" aria-hidden="true"></i><a href="/Allitems">Special Products</a></li>
 					</ul>
 				</div>
 				<div className="col-md-3 w3_footer_grid">
-					<h3>Category</h3>
+					<h3>Category</h3> 
 					<ul className="info"> 
-						<li><i className="fa fa-arrow-right" aria-hidden="true"></i><a href="/groceries">Groceries</a></li>
-						<li><i className="fa fa-arrow-right" aria-hidden="true"></i><a href="/household">Household</a></li>
-						<li><i className="fa fa-arrow-right" aria-hidden="true"></i><a href="/personalCare">Personal Care</a></li>
-						<li><i className="fa fa-arrow-right" aria-hidden="true"></i><a href="/packagedFoods">Packaged Foods</a></li>
-						<li><i className="fa fa-arrow-right" aria-hidden="true"></i><a href="/beverages">Beverages</a></li>
+
+
+						<li><a href="/Pizzas"><i className="fa fa-arrow-right" aria-hidden="true"></i>PIZZA</a></li>
+						<li><a href="/Momos"><i className="fa fa-arrow-right" aria-hidden="true"></i>MOMO</a></li>
+						<li><a href="/Noodles"><i className="fa fa-arrow-right" aria-hidden="true"></i>NOODLES</a></li>
+						<li><a href="/Chillies"><i className="fa fa-arrow-right" aria-hidden="true"></i>CHILLI</a></li>
+						<li><a href="/Sandwiches"><i className="fa fa-arrow-right" aria-hidden="true"></i>SANDWICH</a></li>
+						<li><a href="/Healthychoices"><i className="fa fa-arrow-right" aria-hidden="true"></i>HEALTHY CHOICE</a></li>
+						<li><a href="/Rices"><i className="fa fa-arrow-right" aria-hidden="true"></i>RICE</a></li>
 					</ul>
 				</div>
 				<div className="col-md-3 w3_footer_grid">
 					<h3>Profile</h3>
 					<ul className="info"> 
-						<li><i className="fa fa-arrow-right" aria-hidden="true"></i><a href="/products">Store</a></li>
-						<li><i className="fa fa-arrow-right" aria-hidden="true"></i><a href="checkout.html">My Cart</a></li>
+						<li><i className="fa fa-arrow-right" aria-hidden="true"></i><a href="/Allitems">Store</a></li>
+						<li><i className="fa fa-arrow-right" aria-hidden="true"></i><a href="/">My Cart</a></li>
 						<li><i className="fa fa-arrow-right" aria-hidden="true"></i><a href="/login">Login</a></li>
-						<li><i className="fa fa-arrow-right" aria-hidden="true"></i><a href="/Register">Create Account</a></li>
+						<li><i className="fa fa-arrow-right" aria-hidden="true"></i><a href="/Registerr">Create Account</a></li>
 					</ul>
 				</div>
 				<div className="clearfix"> </div>
@@ -52,7 +56,7 @@ function Footer() {
 		<div className="footer-copy">
 			
 			<div className="container">
-				<p>© 2017 Super Market. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+				<p>© 2017 Super Market. All rights reserved | Design by <a href="/">Jenish</a></p>
 			</div>
 		</div>
 		
@@ -62,10 +66,10 @@ function Footer() {
 			<div className="container">
 				<div className="w3layouts-foot">
 					<ul>
-						<li><a href="https://www.facebook.com/" className="w3_agile_facebook"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li><a href="https://www.twitter.com/" className="agile_twitter"><i className="fa fa-twitter" aria-hidden="true"></i></a></li>
-						<li><a href="https://www.facebook.com/" className="w3_agile_dribble"><i className="fa fa-dribbble" aria-hidden="true"></i></a></li>
-						<li><a href="https://www.facebook.com/" className="w3_agile_vimeo"><i className="fa fa-vimeo" aria-hidden="true"></i></a></li>
+						<li><Link to="https://www.facebook.com/" className="w3_agile_facebook"><i className="fa fa-facebook" aria-hidden="true"></i></Link></li>
+						<li><Link to="https://www.twitter.com/" className="agile_twitter"><i className="fa fa-twitter" aria-hidden="true"></i></Link></li>
+						<li><Link to="https://www.facebook.com/" className="w3_agile_dribble"><i className="fa fa-dribbble" aria-hidden="true"></i></Link></li>
+						<li><Link to="https://www.facebook.com/" className="w3_agile_vimeo"><i className="fa fa-vimeo" aria-hidden="true"></i></Link></li>
 					</ul>
 				</div>
 				<div className="payment-w3ls">	

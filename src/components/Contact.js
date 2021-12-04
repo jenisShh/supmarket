@@ -8,6 +8,7 @@ import {FaPhone} from "../../node_modules/react-icons/fa";
 import {FaFacebook} from "../../node_modules/react-icons/fa";
 import {FaTwitter} from "../../node_modules/react-icons/fa";
 import {FaRss} from "../../node_modules/react-icons/fa";
+import { Link } from "react-router-dom";
 // import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 function Contact() {
@@ -19,7 +20,7 @@ function Contact() {
       <div className="breadcrumbs">
         <div className="container">
           <ol className="breadcrumb breadcrumb1 animated wow slideInLeft" data-wow-delay=".5s">
-            <li><a href="/"><span className="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
+            <li><Link to="/"><span className="glyphicon glyphicon-home" aria-hidden="true"></span>Home</Link></li>
             <li className="active">Contact</li>
           </ol>
         </div>
@@ -37,15 +38,15 @@ function Contact() {
 						<h3>Contact Info</h3>
 						<p>1234k Avenue, 4th block, New York City.</p>
 						<ul className="wthree_contact_info_address">
-							<li><i  aria-hidden="true"> <FaEnvelope/></i><a href="mailto:info@example.com">info@example.com</a></li>
+							<li><i  aria-hidden="true"> <FaEnvelope/></i><Link to="mailto:info@example.com">info@example.com</Link></li>
 							<li><i aria-hidden="true"> <FaPhone/></i>+(0123) 232 232</li>
 						</ul>
 						<div className="w3_agile_social_icons w3_agile_social_icons_contact">
 							<ul>
               
-								<li><a href="https://www.facebook.com/" className="icon icon-cube agile_facebook "><FaFacebook/>  </a></li>
-								<li><a href="/https://www.facebook.com/" className="icon icon-cube agile_rss"> <FaRss/></a></li>
-								<li><a href="/https://www.twitter.com/" className="icon icon-cube agile_t"> <FaTwitter/></a></li>
+								<li><Link to="https://www.facebook.com/" className="icon icon-cube agile_facebook "><FaFacebook/>  </Link></li>
+								<li><Link to="/https://www.facebook.com/" className="icon icon-cube agile_rss"> <FaRss/></Link></li>
+								<li><Link to="/https://www.twitter.com/" className="icon icon-cube agile_t"> <FaTwitter/></Link></li>
 							</ul>
 						</div>
 					</div>
@@ -74,18 +75,6 @@ function Contact() {
 			<div className="clearfix"> </div>
 		</div>
 	</div>
-
-  {/* <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
-  <TileLayer
-    attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-  />
-  <Marker position={[51.505, -0.09]}>
-    <Popup>
-      A pretty CSS3 popup. <br /> Easily customizable.
-    </Popup>
-  </Marker>
-</MapContainer> */}
       <Footer/>
     </>
   );

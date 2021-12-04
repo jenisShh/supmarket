@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Col, Row } from "react-bootstrap";
-import { Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import "../components/Categories.css"
 // import Category from "./Category";
 
@@ -46,11 +46,9 @@ const Categories = () => {
                 <Card.Subtitle className= "mb-2 text-muted">  
                     {`${category.productCount}`} products
                 </Card.Subtitle>
-                <a href="/products" class="card-link">Shop Now</a>
+                <a href="/Allitems" class="card-link">Shop Now</a>
             </Card.Body> 
-
         </Card>
-
 
         </>
     )
